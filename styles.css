@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 1rem;    
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.desc {
+    padding: 10%;
+    text-align: center;
+}
+
+h1 {
+    margin-top: -10px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.subscription {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    border-radius: 0.625rem;
+}
+.subscription img {
+    margin-left: 20px;
+}
+.subcription_plan {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.subcription_plan h2 {
+    margin-top: 10px;
+    color: hsl(223, 47%, 23%);
+    font-size: 1rem;
+    font-weight: 900;
+}
+.subcription_plan p {
+    margin: 5px;
+    font-weight: 500;
+
+}
+.change {
+    margin-left: 80px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+.change:hover {
+    text-decoration: none;
+    color: hsl(245, 40%, 58%);
+}
+.buy {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.payment {
+    height: 40px;
+    border-radius: 0.625rem;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 2px 15px hsl(225, 100%, 98%);
+    margin: 10px 0;
+    cursor: pointer;
+}
+.payment:hover {
+    background-color: hsl(245, 40%, 58%);
+}
+.proceed {
+    color: hsl(0, 0%, 97%);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.cancel {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    margin-top: 20px;
+}
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+@media only screen and (max-width: 500px) {
+    .container {
+        max-width: 90%;
+    }
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-color: hsl(225, 100%, 94%);
+    }
+    .change {
+        margin-left: 30px;
+    }
+    .subscription {
+        margin: 0 -10px;
+    }
+
+}
